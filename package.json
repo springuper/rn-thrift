@@ -1,0 +1,35 @@
+{
+  "name": "rn-thrift",
+  "version": "0.1.0",
+  "description": "thrift library for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run --browsers PhantomJS",
+    "lint": "./node_modules/.bin/eslint *.js lib/**/*.js tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.sankuai.com/~shangchun/rn-thrift.git"
+  },
+  "keywords": [
+    "react-native",
+    "thrift"
+  ],
+  "author": "springuper <springuper@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.1",
+    "karma": "^0.13.21",
+    "karma-browserify": "^5.0.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.2",
+    "mocha": "^2.4.5",
+    "thrift": "^0.9.3",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "buffer": "^4.5.0"
+  }
+}
