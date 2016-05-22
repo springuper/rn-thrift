@@ -7,7 +7,7 @@
 
 //HELPER FUNCTIONS AND STRUCTURES
 
-hello_svc_get_message_args = function(args) {
+var hello_svc_get_message_args = function(args) {
   this.name = null;
   if (args) {
     if (args.name !== undefined) {
@@ -60,7 +60,7 @@ hello_svc_get_message_args.prototype.write = function(output) {
   return;
 };
 
-hello_svc_get_message_result = function(args) {
+var hello_svc_get_message_result = function(args) {
   this.success = null;
   if (args) {
     if (args.success !== undefined) {
@@ -113,7 +113,7 @@ hello_svc_get_message_result.prototype.write = function(output) {
   return;
 };
 
-hello_svcClient = function(input, output) {
+var hello_svcClient = exports.Client = function(input, output) {
     this.input = input;
     this.output = (!output) ? input : output;
     this.seqid = 0;
