@@ -1,11 +1,11 @@
 {
-  "name": "@mtfe/rn-thrift",
+  "name": "rn-thrift",
   "version": "0.0.1",
   "description": "thrift library for react-native",
   "main": "lib/thrift.js",
   "scripts": {
     "test": "karma start --single-run --browsers PhantomJS",
-    "lint": "./node_modules/.bin/eslint *.js lib/**/*.js tests/**/*.js",
+    "lint": "./node_modules/.bin/eslint lib/**/*.js tests/**/*.js",
     "pack": "./node_modules/.bin/browserify lib/thrift.js --standalone Thrift > dist/thrift.js"
   },
   "repository": {
